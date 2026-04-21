@@ -1,0 +1,20 @@
+[project]
+name = "maaqis"
+version = "1.0.0"
+description = "Multi-Agent Air Quality Intelligence System - OpenEnv Environment"
+requires-python = ">=3.11"
+dependencies = [
+    "openai",
+    "pydantic",
+    "python-dotenv",
+    "fastapi",
+    "uvicorn",
+    "openenv-core>=0.2.0",
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.backends.legacy:BuildBackend"
